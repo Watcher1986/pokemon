@@ -1,0 +1,105 @@
+.poke-card {
+  min-height: 350px;
+  height: fit-content;
+  width: 30%;
+  margin-top: 2rem;
+  display: flex;
+  background: #fff;
+  flex-direction: column;
+  border: 1px solid #d6d7d8;
+  border-radius: 0.5rem;
+}
+
+.img-box {
+  position: relative;
+}
+
+.poke-img {
+  padding: 0.5rem;
+  height: 250px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.poke-name {
+  padding: 0.5rem 0rem;
+  text-align: center;
+  border-top: 1px solid #d6d7d8;
+  opacity: 0.8;
+}
+
+.poke-info-box {
+  display: flex;
+  width: 100%;
+  padding: 0.7rem;
+}
+
+.type-tab {
+  display: inline-block;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  line-height: 100%;
+}
+
+table,
+tbody {
+  width: inherit;
+  border-collapse: collapse;
+}
+table {
+  border: 1px solid #d6d7d8;
+}
+
+td {
+  padding: 0.25rem 0rem;
+  font-weight: 600;
+  opacity: 0.7;
+  text-align: center;
+  border: 1px solid #666;
+}
+
+.close-icon {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  height: 24px;
+  width: 24px;
+  color: #666;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s linear;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/close-icon.svg');
+}
+.close-icon:hover {
+  opacity: 0.2;
+}
+
+@media (min-width: 772px) and (max-width: 991px) {
+  .poke-card {
+    width: 35%;
+  }
+}
+
+@media (max-width: 772px) {
+  .poke-container {
+    position: relative;
+    width: 100% !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #8b97a2;
+    z-index: 1000;
+  }
+  .poke-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-box-shadow: 1px 1px 7px 5px rgba(0, 0, 0, 0.53);
+    box-shadow: 1px 1px 7px 5px rgba(0, 0, 0, 0.53);
+  }
+}
